@@ -66,27 +66,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-
-
-// Explanation:
-// State Management:
-
-// formType state determines whether the user is viewing the sign-in or register form.
-// formData state holds the input values for username and password.
-// Handling Input Changes:
-
-// handleChange updates the formData state when input fields change.
-// Form Submission:
-
-// handleSubmit sends a POST request to the appropriate endpoint based on the formType. Adjust the endpoints as needed for your server.
-// Form Toggling:
-
-// A button allows users to toggle between sign-in and registration forms by changing the formType.
-// Rendering:
-
-// The component conditionally renders the form title and submit button text based on formType.
-// Styling:
-
-// Ensure that your CSS classes (btn) are defined for styling the buttons.
-// This React component provides a simple way to switch between authentication forms while managing form state and submissions. Adjust the endpoints and logic as needed for your specific use case.

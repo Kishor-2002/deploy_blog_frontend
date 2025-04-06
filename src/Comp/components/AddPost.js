@@ -20,11 +20,7 @@ const AddPost = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ title, body }),
             })
-        // .then(response => response.json())
-        // .then(data => console.log(data))
-        // .catch(error => console.error('Error:', error));
         if(response.ok)
-            // window.('Post Added')
             alert("Post Added");
             navigate(`/dashboard`);
     };
@@ -53,15 +49,3 @@ const AddPost = () => {
 };
 
 export default AddPost;
-
-
-// Explanation:
-// State Management: Using useState hooks to manage the form input values (title and body).
-
-// Form Handling: The handleSubmit function is called when the form is submitted. It prevents the default form behavior and logs the form data. You can replace this with actual logic for sending the form data to a server.
-
-// Input Handling: The value and onChange attributes on <input> and <textarea> ensure that the component is controlled, meaning React keeps track of the input values and updates state on changes.
-
-// JSX Syntax: The form structure is maintained, but with JSX syntax, including htmlFor instead of for in labels.
-
-// This component should be placed in a React application and can be rendered as part of your component tree.
